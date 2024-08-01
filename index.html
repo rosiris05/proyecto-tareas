@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>terea y eventos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="myButton" onclick="handleClick()">Haz clic en mí</button>
-    <input type="text" id="myInput" onkeyup="handleKeyUp()">
-    <div id="hoverDiv" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">Pasa el ratón sobre mí</div>
-    <script src="function.js"></script>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <div class="search">
+            <form>
+                <input id="tarea" type="text" placeholder="Agregar tarea...">
+                <select name="" id="prioridad">
+                    <option value="baja">baja</option>
+                    <option value="mediana">mediana</option>
+                    <option value="alta">alta</option>
+                </select>
+                <button class="btn-add">+</button>
+                
+            </form>
+            <ul></ul>
+            
+        </div>
+        <div class="li-container">
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="empty">
+            <p>No tienes tareas pendientes.</p>
+        </div>
+    </div>
+    <script src="./function.js"></script>
+
+    <div class="container-event">
+        <h1 class="lista">Lista de Eventos</h1>
+        <div class="eventos">
+            <form>
+                <input id="evento" type="text-evento" placeholder="Agregar evento">
+                <button class="bton-add-event">+</button>
+            </form>
+        </div>
+        <div class="li-container-event">
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="emptyE">
+            <p>No tienes eventos programados..</p>
+
+    </div>
 </body>
 </html>
