@@ -1,0 +1,9 @@
+
+#hoverDiv {
+    padding: 20px;
+    background-color: lightblue;
+}
+
+#hoverDiv.hover {
+    background-color: lightcoral;
+}
